@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Zen+Dots&display=swap');
+
+body {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    background: linear-gradient(-45deg,black, rgb(129, 2, 2));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-track {
+    border: 0;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(234, 255, 0), rgb(255, 0, 0));
+    border-radius: 100px 0px 0px 100px;
+    transition: 5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 5px 5px 15px white,
+        -5px -5px 15px white,
+        -5px 5px 15px white,
+        5px -5px 15px white;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 3vh;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.music1 {
+    display: flex;
+}
+
+.leftright {
+    width: 80%;
+    height: 53px;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    font-size: 15px;
+    border-radius: 50px 5px 5px 50px ;
+    background-color: rgba(0, 0, 0, 0.432);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 20px rgb(119, 118, 118);
+    transition:0.3s;
+}
+
+.leftright:hover{
+    font-size: 16px;
+    padding: 5px;
+    border: 3px white solid;
+}
+
+.icon{
+    color: white;
+    margin-right: 10px;
+    margin-top: 7.5px;
+}
+
+.head {
+    color: red;
+    float: left;
+    margin-top: 13px;
+    margin-left: 30px;
+    text-shadow: 3px 3px 7px black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.headding {
+    font-family: 'Zen Dots', cursive;
+    color: white;
+    font-size: 5vh;
+    text-shadow: 7px 7px 5px black;
+}
+
+
+.btnplay {
+    font-size: 35px;
+    float: right;
+    background: none;
+    border: none;
+    margin-top: 0px;
+}
+
+.btnstop {
+    display: none;
+    font-size: 35px;
+    background: none;
+    border: none;
+    margin-right: 0px;
+    float: right;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        text-align: center;
+        background: linear-gradient(-45deg,black, rgb(129, 2, 2));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .headding {
+        font-family: 'Zen Dots', cursive;
+        color: white;
+        font-size: 3.5vh;
+        margin-right: 10px;
+        text-shadow: 7px 7px 5px black;
+    }
+    .leftright {
+        width: 95%;
+        height: 53px;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        font-size: 12px;
+        border-radius: 0px 5px 5px 0px ;
+        background: linear-gradient(45deg, black,black,red);
+        box-shadow: 10px 10px 20px rgb(119, 118, 118);
+        transition:0.3s;
+    }
+    .leftright:hover{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .head {
+        color: red;
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+        text-shadow: 3px 3px 7px grey;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .btnplay {
+        font-size: 35px;
+        float: right;
+        background: none;
+        border: none;
+        margin-top: 0px;
+    }
+    
+    .btnstop {
+        font-size: 35px;
+        background: none;
+        border: none;
+        margin-right: 10px;
+        float: right;
+        margin-top: 0px;
+    }
+}
